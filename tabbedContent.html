@@ -52,8 +52,9 @@
     <!-- product info using grid columns -->
     <section class="section">
       <div class="container">
-        <div class="columns is-vcentered">
-          <div class="column is-3">
+        <!-- is-multiline lets us move items to the row below if there isn't enought space for them -->
+        <div class="columns is-vcentered is-multiline">
+          <div class="column is-6-tablet is-3">
             <!-- apply sizes to desktops and mobiles-->
             <h1 class="is-size-3-mobile is-size-1-desktop title">Docker</h1>
             <h2 class="is-size-3-mobile is-size-2-desktop subtitle">
@@ -66,14 +67,14 @@
             </p>
           </div>
           <!-- has-text-centered also works on images -->
-          <div class="column is-5 has-text-centered">
+          <div class="column is-6-tablet is-5-desktop has-text-centered">
             <img
               src="assets/product.png"
               alt="docker coffee image"
               class="px-6"
             />
           </div>
-          <div class="column is-4">
+          <div class="column is-12-tablet is-4-desktop">
             <div class="is-size-4 mb-4">£10.95</div>
             <p class="mb-4">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum
@@ -85,6 +86,21 @@
       </div>
     </section>
 
+    <section class="section">
+      <div class="container">
+        <!--is-variable helps us close the gap between columns -->
+        <div class="columns is-8 is-variable">
+          <div class="column is-7-tablet">
+              <!-- tabbed content -->
+          </div>
+          <div class="column is-5-tablet">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis doloribus maiores cupiditate, iusto fuga eum?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="navBar.js"></script>
+    <script src="tabbedContent.js"></script>
   </body>
 </html>
